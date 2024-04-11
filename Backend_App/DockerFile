@@ -1,0 +1,8 @@
+FROM node:latest AS build
+WORKDIR /app
+
+# Change the path to the name of your App folder
+COPY ./Backend_App/package.json .
+RUN npm install
+COPY ./Backend_App/ .
+CMD npm start
