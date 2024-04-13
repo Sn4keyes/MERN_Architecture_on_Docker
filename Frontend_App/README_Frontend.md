@@ -1,23 +1,30 @@
 # ReadMe Frontend App
 
+Vous pouvez directement creer et ajouter vos fichiers dans le dossier `app_name/src` et mettre a jour le Frontend grace aux commande disponible.
+
+> 📘 Info :
+>
+> Si vous modifiez les noms des dossiers du Frontend n'oubliez pas de modifier les fichiers `docker-compose.yml` et `DockerFile` .\
+> Une fois le projet lancé avec Docker vous n'avez pas besoin d'executer des commandes pour le Frontend, tout ce fait automatiquement.
+
 ## Available Scripts
 
 In the project directory, you can run:
-- `npm start`:
+- `npm start` :
 Runs the app in the development mode.\
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-- `npm test`:
+- `npm test` :
 Launches the test runner in the interactive watch mode.\
 
-- `npm run build`:
+- `npm run build` :
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-- `npm run eject`:
+- `npm run eject` :
 **Note: this is a one-way operation. Once you `eject`, you can't go back!**
 If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
