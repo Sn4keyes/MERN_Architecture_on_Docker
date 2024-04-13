@@ -1,13 +1,13 @@
 # ReadMe Frontend App
 
-Vous pouvez directement creer et ajouter vos fichiers dans le dossier `app_name/src` et mettre a jour le Frontend grace aux commande disponible.
+You can directly create and add your files in the `app_name/src` folder and update the Frontend using the available commands.
 
 > 📘 Info :
 >
-> Si vous modifiez les noms des dossiers du Frontend n'oubliez pas de modifier les fichiers `docker-compose.yml` et `DockerFile` .\
-> Une fois le projet lancé avec Docker vous n'avez pas besoin d'executer des commandes pour le Frontend, tout ce fait automatiquement.
+> If you modify the names of the Frontend folders, don't forget to modify the `docker-compose.yml` and `DockerFile` files.\
+> Once the project is launched with Docker you do not need to execute commands for the Frontend, everything is done automatically.
 
-## Available Scripts
+## Available Scripts :
 
 In the project directory, you can run:
 - `npm start` :
