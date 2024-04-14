@@ -18,4 +18,4 @@ In the project directory, you can run:
 
 > ❗️ Attention :
 >
-> Don't forget to replace all the URLs in the `server.js` file and put the hosting and server connection URLs.
+> Don't forget to replace all URLs in your files and put the hosting and server connection URLs.
