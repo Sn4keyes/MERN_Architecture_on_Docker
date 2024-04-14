@@ -1,6 +1,4 @@
 // ########## Imports : ##########
-// const fs = require('fs');
-// const path = require('path')
 const cors = require('cors');
 const express = require('express');
 const bodyParser = require('body-parser');
@@ -17,7 +15,6 @@ const HttpError = require('./models/http-error');
 
 const app = express();
 app.use(bodyParser.json());
-// app.use('/uploads/images_users', express.static(path.join('uploads', 'images_users')));
 
 // ########## Autorisation Header : ##########
 app.use((req, res, next) => {
@@ -37,7 +34,7 @@ app.use((req, res, next) => {
 });
 
 // ########## Autorisation Cors : ##########
-// Autorisez uniquement certaines origines à accéder à votre backend :
+// Only allow certain origins to access your backend :
 const allowedOrigins = ['http://localhost:8083', 'http://localhost:8082'];
 const corsOptions = {
   origin: function (origin, callback) {
@@ -62,28 +59,15 @@ app.use((req, res, next) => {
   throw error;
 });
 
-// app.use((error, req, res, next) => {
-//   if (req.file) {
-//     fs.unlink(req.file.path, err => {
-//       console.log(err);
-//     });
-//   }
-//   if (res.headerSent) {
-//     return next(error);
-//   }
-//   res.status(error.code || 500);
-//   res.json({ message: error.message || 'An unknown error occurred!' });
-// });
-
-// mongoose
-//   .connect(
-//     `mongodb+srv://Backend_API:sO0xNVLQM8CzAAW6@cluster0.kjfexm6.mongodb.net/mern?retryWrites=true&w=majority`
-//   )
-//   .then(() => {
+mongoose
+  .connect(
+    `mongodb+srv://<username>:<password>@<cluster-name>.<cluster-code>.mongodb.net/`
+  )
+  .then(() => {
     app.listen(8082, () => {
       console.log('Backend server is running on port 8082');
     });
-//   })
-//   .catch(err => {
-//     console.log(err);
-//   });
+  })
+  .catch(err => {
+    console.log(err);
+  });

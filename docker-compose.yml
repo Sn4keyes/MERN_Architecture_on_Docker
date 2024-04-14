@@ -23,7 +23,7 @@ services:
       - backend_net
       - frontend_net
     volumes:
-       - ./App_Backend/uploads:/app/uploads
+       - ./Backend_App/uploads:/app/uploads
     restart: unless-stopped
 
   #################### FRONTEND ####################
@@ -40,3 +40,5 @@ services:
     depends_on:
       - backend_app
     restart: unless-stopped
+
+  #################### DATABASE ####################
