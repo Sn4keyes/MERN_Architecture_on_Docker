@@ -1,6 +1,8 @@
 # MERN_Architecture
 
-Example of MERN architecture to create a website with a Database (Mongo), a Backend (NodeJS) and a Frontend (ReactJS) on Docker to facilitate development.
+Example of MERN architecture to create a website with a Database (Mongo), a Backend (NodeJS) and a Frontend (ReactJS) on Docker to facilitate development.\
+In this project I use the MongoDB Atlas cloud service which allows me to have my database online, to be able to work with several people having the same data and to reduce my Docker application and local storage.\
+But you can absolutely use MongoDB locally and add the mongo and mongo-express images and put the correct connection URL to your database in the `server.js` file.
 
 ## Launch Project :
 
